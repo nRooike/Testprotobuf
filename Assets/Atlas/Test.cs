@@ -32,16 +32,21 @@ public class Test : MonoBehaviour
                 CreateAtlas(item, spriteAtlas);
             }
             string[] test1 = Directory.GetFiles(path);
+            int index = 1;
             foreach (var item in test1)
             {
+           
                 if (item.EndsWith("png") || item.EndsWith("jpg"))
                 {
                     string relativePath = GetRelativePath(System.Environment.CurrentDirectory, item);
                     Debug.Log(relativePath.Replace("\\", "/"));
                     var picture = AssetDatabase.LoadAssetAtPath<Sprite>(relativePath);
                     spriteAtlas.Add(new Object[] { picture });
+                    EditorUtility.DisplayProgressBar("打包图集中...", "正在处理:" + item, index / item.Length);
                 }
+                index++;
             }
+            EditorUtility.ClearProgressBar();
         }
     }
     private static string GetRelativePath(string pathA, string pathB)

@@ -20,7 +20,19 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings: []
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: PS4
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 12
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
     packingSettings:
       serializedVersion: 2
       padding: 4
@@ -30,8 +42,9 @@ SpriteAtlas:
       enableTightPacking: 1
     variantMultiplier: 1
     packables:
-    - {fileID: 21300000, guid: 5da6bc476ab60754587fb47a370c9f78, type: 3}
-    - {fileID: 21300000, guid: b354e20134e226549b1865bf5b1decb4, type: 3}
+    - {fileID: 21300000, guid: 203437d6c55d3164fa91f6f46226f0fc, type: 3}
+    - {fileID: 21300000, guid: 676d3c0d1f365f54782422707e4f7b67, type: 3}
+    - {fileID: 21300000, guid: f546d0223cb1ac145a5228827b661499, type: 3}
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites: []
