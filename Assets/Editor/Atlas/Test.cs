@@ -8,7 +8,7 @@ using UnityEngine.U2D;
 
 public class Test : MonoBehaviour
 {
-    [MenuItem("Assets/Create/将文件夹下所有图片打成图集",false,20)]
+    [MenuItem("Tools/Create/将文件夹下所有图片打成图集",false,20)]
     public static void CreateSpriteAtlas()
     {
         var temp = Selection.GetFiltered<Object>(SelectionMode.Assets);
